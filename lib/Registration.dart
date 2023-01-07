@@ -1,4 +1,5 @@
 import 'package:car_app_ui/Login_page.dart';
+import 'package:car_app_ui/home.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'dart:ui' as ui;
@@ -46,6 +47,13 @@ class _RegistrationState extends State<Registration> {
               //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
               painter: RPSCustomPainter(),
             ),
+            Container(margin: EdgeInsets.only(top: 260),
+              child: CustomPaint(
+                size: Size(double.infinity, 650),
+                //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
+                painter: RPSCustomPainter1(),
+              ),
+            ),
             Positioned(
               child: Column(
                 children: [
@@ -61,7 +69,7 @@ class _RegistrationState extends State<Registration> {
                         fontWeight: FontWeight.bold),
                   )),
                   SizedBox(
-                    height: 10,
+                    height: 30,
                   ),
                   Padding(
                     padding: const EdgeInsets.all(10.0),
@@ -332,7 +340,7 @@ class _RegistrationState extends State<Registration> {
                     ),
                   ),
                   SizedBox(
-                    height: 40,
+                    height: 20,
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -346,21 +354,14 @@ class _RegistrationState extends State<Registration> {
                           return Login_page();
                         },));
                       }, child: Text(
-                        "Login",
-                        style: TextStyle(color: Color(0xff250148),fontSize: 16),
+                        "Login",style: TextStyle(color: Color(0xff250148),fontSize: 20),
                       ))
                     ],
                   ),
                 ],
               ),
             ),
-            Container(margin: EdgeInsets.only(top: 260),
-              child: CustomPaint(
-                size: Size(double.infinity, 650),
-                //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
-                painter: RPSCustomPainter1(),
-              ),
-            ),
+
 
           ],
         ),

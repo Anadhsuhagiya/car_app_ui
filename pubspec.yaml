@@ -37,6 +37,12 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   fluttertoast:
+  flutter_staggered_grid_view:
+  story_view:
+  flutter_slider_drawer:
+  shrink_sidemenu:
+  device_preview:
+  google_fonts:
 
 dev_dependencies:
   flutter_test:
